@@ -1,0 +1,107 @@
+.border {
+    border: 2px solid red;
+    margin: 3px;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.bg-black {
+    background-color: black;
+    color: white;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.bg-grey {
+    background-color: #121212;
+}
+
+.rounded {
+    border-radius: 7px;
+}
+
+.m-1 {
+    margin: 5px;
+}
+
+.p-1 {
+    padding: 10px;
+}
+
+
+/* For Webkit browsers (e.g., Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333;
+    /* Dark color for the thumb */
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #222;
+    /* Dark color for the track */
+}
+
+/* For Firefox */
+/* scrollbar-color: #333 #222; Dark color for the thumb and track in Firefox */
+
+
+/* 
+// //display all albums
+async function displayAlbums() {
+    let a = await fetch(`http://127.0.0.1:5500/songs/`)
+    let response = await a.text();
+    let div = document.createElement("div");
+    div.innerHTML = response;
+    let anchors = div.getElementsByTagName("a")
+    Array.from(anchors).forEach(async e=>{
+        if(e.href.includes("/songs")){
+            let folder = e.href.split("/").slice(-2)[0];
+
+            //get the metadata of the folder
+            let a = await fetch(`http://127.0.0.1:5500/songs/${folder}/info.json`)
+            let response = await a.json();
+            console.log(response)
+        }
+    })
+} */
+
+ /* <div data-folder="cs" class="card">
+                        <div class="play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <!-- <img src="cover.jpg" alt=""> -->
+                        <h2>Happy Hits!</h2>
+                        <p>Hits to boots your mood and fill you with happiness!</p>
+                    </div>
+                    <div data-folder="ncs" class="card">
+                        <div class="play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <!-- <img src="cover.jpg" alt=""> -->
+                        <h2>Happy Hits!</h2>
+                        <p>Hits to boots your mood and fill you with happiness!</p>
+                    </div> */
